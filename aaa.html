@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toggle {
+            display:none;
+        }
+        label {background-color: red;
+              color: white;
+            padding: 20px 200px;
+            cursor:pointer;
+            border-radius: 10px;
+            display: inline-block;
+            border:1px solid black;}
+        .info{
+            position: absolute;
+            text-align: center;
+            height: 100px;
+            width: 380px;
+            display: none;
+            margin-top: 1px;
+            margin-left:30px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+        background-color: rgb(143, 197, 197);}
+        #toggle:checked ~.info{display: block;}
+    </style>
+</head>
+<body>
+    <section>
+        <input type="checkbox" id="toggle">
+        <label for="toggle">Sobre mi</label>
+        <div class="info">Aaaaaaaaaaaaaaaaaaaaaaaa</div>
+    </section>
+</body>
+</html>
